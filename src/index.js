@@ -1,2 +1,2 @@
-import './js/modal-frenchise';
+import './js/modal-franchise';
 import './js/modal-location';
