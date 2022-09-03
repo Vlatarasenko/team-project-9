@@ -12,9 +12,8 @@
 
 .advantages-list__item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .advantages-list__title {
@@ -22,26 +21,12 @@
     color: #FCFCFC;
 }
 
-
-
-.advantages-list__icon {
-    display: block;
+.wrapper {
+    display: flex;
     width: 50px;
     height: 50px;
     background-color: #F8D24E;
     border-radius: 50%;
-}
-
-@media screen and (max-width: 480px) {
-    .advantages-list {
-        display: block;
-    }
-
-    .advantages-list__title {
-
-    }
-
-    .advantages-list__description {
-
-    }
+    justify-content: center;
+    align-items: center;
 }
