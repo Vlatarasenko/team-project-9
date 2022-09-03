@@ -1,13 +1,2 @@
-import './js/modal'
-
-
-
-
-
-
-
-
-
-
-
-import './js/simplelightbox'
+import './js/modal-frenchise';
+import './js/modal-location';
