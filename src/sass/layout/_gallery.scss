@@ -1,0 +1,127 @@
+.gallery-list {
+    padding-bottom: 80px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .bg {
+    background-color: var(--title-item-text-color);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background:  
+    url(../images/mobile/background/bg-ice-cream.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bg {
+    background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
+  }
+ }
+}
+
+@media screen and (min-width: 768px) {
+    .bg {
+    background-color: var(--title-item-text-color);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background:  
+    url(../images/tablet/background/bg-ice-cream.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bg {
+    background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
+  }
+ }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg {
+    background-color: var(--title-item-text-color);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background:  
+    url(../images/desktop/background/bg-ice-cream.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bg {
+    background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
+  }
+ }
+}
+
+
+.review-picture {
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-photo {
+    background: #6E6E6E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    text-align: center;
+}
+
+.review-text__item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+
+    background-color:#84a178;
+    border-radius: 10px;
+    padding: 34px 39px;
+}   
+
+
+
+.review-name__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  color: #000000;
+
+  &:last-child {
+    padding-bottom: 244px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review-name__item:last-child {
+    padding-bottom: 425px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .review-name__item:last-child {
+    padding-bottom: 425px;
+  }
+}
