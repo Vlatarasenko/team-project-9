@@ -6,6 +6,12 @@
   padding-right: 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;

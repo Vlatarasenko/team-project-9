@@ -1,0 +1,65 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="buy-now-modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn" width="16" height="16">
+        <use href="./images/sprite.svg#close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-modal__title">Buy now</h2>
+    <ul class="buy-now-modal__list list">
+      <li class="buy-now-modal__list-item ice-cream">
+        <!-- <picture>
+        <source srcset="" media="(min-width: 320px)" />
+        <source srcset="" media="(min-width: 768px)" /> -->
+        <img src="./images/mobile/modal-window/ice-cream.jpg" alt="Ice Cream" />
+        <!-- </picture> -->
+      </li>
+
+      <li class="buy-now-modal__list-item ice-coffee">
+        <!-- <picture>
+        <source srcset="" media="(min-width: 320px)" />
+        <source srcset="" media="(min-width: 768px)" /> -->
+        <img
+          src="./images/mobile/modal-window/ice-coffee.jpg"
+          alt="Ice Coffee"
+        />
+        <!-- </picture> -->
+      </li>
+      <li class="buy-now-modal__list-item milkshake">
+        <!-- <picture>
+        <source srcset="" media="(min-width: 320px)" />
+        <source srcset="" media="(min-width: 768px)" /> -->
+        <img src="./images/mobile/modal-window/milkshake.jpg" alt="Milkshake" />
+        <!-- </picture> -->
+      </li>
+    </ul>
+    <form class="modal-form">
+      <input
+        type="text"
+        name="user-name"
+        class="modal-form-input"
+        required
+        pattern="^[a-zA-zа-яА-я]+$"
+        placeholder="Name"
+      />
+
+      <input
+        type="tel"
+        name="user-phone"
+        class="modal-form-input"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+        placeholder="Phone"
+      />
+
+      <textarea
+        class="modal-form-comment"
+        name="user-comment"
+        placeholder="Comment"
+      ></textarea>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</div>
