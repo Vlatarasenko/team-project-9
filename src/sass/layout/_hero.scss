@@ -1,0 +1,55 @@
+@media screen and (max-width: 320px) {
+  .hero-container {
+    padding-right: 53px;
+  }
+
+  .hero-title {
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--title-item-text-color);
+  }
+  .hero-title--active {
+    font-size: 34px;
+    line-height: 0.97;
+    text-transform: uppercase;
+  }
+
+  .hero-button-list {
+    display: flex;
+  }
+  .hero-button-list__item--main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    width: 62px;
+    height: 24px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+  }
+  .hero-button-products__link {
+    padding: 9px 12px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #000000;
+  }
+
+  .hero-button-about__link {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    text-decoration-line: underline;
+
+    color: #f8d24e;
+  }
+}
