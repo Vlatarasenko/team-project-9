@@ -1,1 +1,2 @@
-import './js/modal'
+import './js/modal-location'
+import './js/modal-frenchise'
