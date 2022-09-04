@@ -103,7 +103,10 @@
     position: relative;
     border-radius: 50%;
     background-color: var (--accent-color);
-
+    &:hover .footer-contacts__sm-icon,
+    &:focus .footer-contacts__sm-icon{
+        fill:var(--title-item-text-color);
+    }
 }
 .footer-contacts__sm-icon {
     width: 32px;
@@ -112,11 +115,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    fill: var(--title-item-text-color);
+    fill: var(--main-bgc-color);
+    // fill: var(--title-item-text-color);
     @media screen and (min-width: 768px) {
         width: 34px;
         height: 34px;
-        fill: var(--main-bgc-color);
+        
     }
 }
 .footer-contacts__call-text {
