@@ -1,5 +1,5 @@
 import './js/modal-frenchise';
 import './js/modal-location';
+import './js/scroll-to-top';
 
-
-import './js/simplelightbox'
+import './js/simplelightbox';
