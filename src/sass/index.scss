@@ -19,5 +19,11 @@
 @import './components/mobile-menu';
 
 @import './utils/breakpoints';
-@import './utils/vissually-hidden';
+@import './utils/visually-hidden';
 @import './utils/var';
+
+// плавність гортання сторінки треба додати в main scss
+
+html {
+  scroll-behavior: smooth;
+}
