@@ -27,10 +27,11 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts-cards {
     max-width: 280px;
+    padding-left: 24px;
 
     background: #fcfcfc;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+    border-radius: 32px;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -65,6 +66,7 @@
 @media screen and (min-width: 768px) {
   .contacts-cards {
     width: 224px;
+    padding-left: 24px;
   }
 }
 
@@ -79,7 +81,6 @@
   .contacts-cards_item {
     padding-top: 40px;
     padding-right: 168px;
-    padding-left: 32px;
     margin-bottom: 20px;
   }
 }
@@ -96,10 +97,12 @@
 
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.8;
     /* or 22px */
 
-    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: #fcfcfc;
   }
@@ -127,24 +130,49 @@
 }
 
 .contacts-cards__text_biggest {
-  width: 138px;
-  height: 28px;
+  width: 120px;
+  height: 16px;
+
+  @media screen and(min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
+}
+
+.contacts-cards__address {
+  @media screen and (max-width: 767px) {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 173px;
+  }
 }
 
 .contacts-cards__city-point {
-  margin-bottom: 8px;
-
   font-weight: 500;
-  line-height: 1.87;
+  font-size: 12px;
+  line-height: 1.8;
 
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .contacts-cards__city-location {
-  //   width: 262px;
-
   font-weight: 500;
-  line-height: 1.81;
+  font-size: 12px;
+  line-height: 1.8;
 
   color: #d6936d;
 
@@ -154,9 +182,40 @@
 
     margin-bottom: 24px;
     margin-top: 24px;
-    width: 288px;
+    width: 216px;
 
     border-bottom: 1px solid #e1e1e1;
+  }
+
+  // @media screen and (min-width: 480px) {
+  //   &::after {
+  //     content: '';
+
+  //     width: 216px;
+  //   }
+  // }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+    &::after {
+      content: '';
+
+      width: 160px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+
+    &::after {
+      content: '';
+
+      width: 288px;
+    }
   }
 }
 
