@@ -1,10 +1,19 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero-container {
     width: 320px;
     position: relative;
     background-image: url(../images/mobile/hero/points.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    padding-top: 40px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../images/mobile/hero/points@2x.png);
+    }
   }
 
   .hero-title {
@@ -88,6 +97,7 @@
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(6 -15px 15px rgba(252, 252, 252, 0.44));
+    width: 170px;
 
     margin-left: auto;
     margin-right: auto;
@@ -104,11 +114,23 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    padding-bottom: 13px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../images/tablet/hero/points@2x.png);
+    }
   }
 
   .hero-title {
     width: 181px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 18px;
@@ -126,7 +148,7 @@
   .hero-button-list {
     display: flex;
     align-items: center;
-    // padding-bottom: 239px;
+    margin-bottom: 28px;
   }
   .hero-button-list__item--main {
     display: flex;
@@ -178,9 +200,10 @@
 
   .hero-picture {
     width: 270px;
+    height: 343px;
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 87px;
     filter: drop-shadow(6 -15px 15px rgba(252, 252, 252, 0.44));
   }
 
@@ -190,6 +213,7 @@
   }
 
   .hero-desc-text {
+    margin-bottom: 20px;
     width: 151px;
     font-weight: 400;
     font-size: 12px;
@@ -197,7 +221,158 @@
     color: var(--title-item-text-color);
   }
 
-  .hero-about-wrap {
-    display: none;
+  .hero-desc-img {
+    margin-right: 33px;
+    width: 152px;
+  }
+
+  .hero-desc-btn {
+    padding: 0;
+  }
+
+  .hero-desc-btn__icon {
+    fill: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+      width: 50px;
+    }
+  }
+
+  .hero-about {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .hero-about__item--first {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+    color: #000000;
+  }
+
+  .hero-about__item--second {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    color: var(--title-item-text-color);
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    width: 1200px;
+    background-image: url(../images/desktop/hero/points.png);
+    padding-bottom: 65px;
+    padding-top: 30px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../images/desktop/hero/points@2x.png);
+    }
+  }
+
+  .hero-title,
+  .hero-title--active {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+  }
+
+  .hero-title {
+    width: 367px;
+    margin-bottom: 28px;
+  }
+
+  .hero-picture {
+    width: 456px;
+    height: 561px;
+  }
+
+  .hero-button-list {
+    margin-bottom: 42px;
+  }
+
+  .hero-desc-img {
+    margin-right: 14px;
+    width: 225px;
+  }
+
+  .hero-desc-text {
+    font-size: 14px;
+    line-height: 1.42;
+    width: 220px;
+    padding-top: 25px;
+  }
+
+  .hero-about__item--first {
+    font-size: 46px;
+    color: var(--secondary-text-color);
+  }
+
+  .hero-about__item--second {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero-button-products__link {
+    padding: 12px 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #000000;
+  }
+
+  .hero-button-about__link {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero-button-list__item--main {
+    margin-right: 12px;
+  }
+
+  .hero-button-about__link {
+    padding: 12px 22px;
+  }
+
+  .hero-desc-img {
+    -webkit-animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
 }
