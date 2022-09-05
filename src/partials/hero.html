@@ -1,6 +1,6 @@
 <div class="container hero-container">
   <div class="hero-second-wrap">
-    <h1 class="hero-title">
+    <h1 class="hero-title animate__animated animate__rubberBand infin">
       ice cream made with
       <span class="hero-title hero-title--active">passion</span>
     </h1>
@@ -39,11 +39,17 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button type="button" class="hero-desc-btn">
-          <svg width="40" height="20" class="hero-desc-btn__icon">
-            <use href="./images/sprite.svg#arrow"></use>
-          </svg>
-        </button>
+        <div class="hidden-hero-window-wrapper">
+          <button type="button" class="hero-desc-btn">
+            <svg class="hero-desc-btn__icon" width="40" height="20">
+              <use href="./images/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="hidden-hero-window">
+            We send 30% of each sale to support Ukraine
+            <div>Stand with Ukraine! Slava Ukraini!</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero-main-pic">
@@ -69,7 +75,7 @@
         />
         <img
           loading="lazy"
-          class="hero-picture"
+          class="hero-picture animate__animated animate__backInUp infin"
           src="./images/mobile/hero/main-ice-cream.png"
           alt="ice-cream"
         />
