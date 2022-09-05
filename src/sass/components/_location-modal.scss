@@ -1,6 +1,6 @@
 .backdrop-location-map {
   position: fixed;
-  // z-index: 30;
+  z-index: 30;
   top: 0;
   left: 0;
   height: 100%;
@@ -18,16 +18,22 @@
 }
 
 .modal-our-location {
+  z-index: 30;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 568px;
-  height: 458px;
+  width: 280px;
+  height: 355px;
   background-color: #fff;
 
   border: 2px solid #f8d24e;
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 458px;
+  }
 }
 
 .close-btn-modal {
@@ -50,24 +56,41 @@
 }
 
 .modal-our-location__text {
-  padding-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 28px;
+  margin-bottom: 20px;
 
   font-family: 'Seymour One';
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
 
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .map {
+  width: 224px;
+  height: 199px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+
+    margin-bottom: 32px;
+  }
 }
 
 .open-map {
@@ -85,7 +108,7 @@
   margin-bottom: 32px;
 
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
 
   color: #000000;
@@ -101,5 +124,9 @@
     transform: scale(1.1);
     outline: none;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 }
