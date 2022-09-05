@@ -1,3 +1,9 @@
+// @media screen and (max-width: 767px) {
+//   .header {
+//     display: none;
+//   }
+// }
+
 .header {
   position: relative;
   top: 0;
@@ -13,7 +19,6 @@
   line-height: 1.3;
   letter-spacing: 0.03em;
   min-width: 320px;
-
 
   padding-bottom: 25px;
 }
