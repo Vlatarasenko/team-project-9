@@ -1,11 +1,10 @@
 @media screen and (max-width: 319px) {
   .product {
     background-image: url(../images/mobile/background/bg-ice-cream.jpg);
-    margin-right: auto;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    background-repeat: repeat;
+    background-position: 50%;
+    background-size: contain;
     width: 100%;
   }
   @media (min-device-pixel-ratio: 2),
@@ -109,7 +108,23 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    margin-top: -560px;
+    margin-top: -515px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px;
+  }  
+  .types-item.col-yellow::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    margin-top: -515px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -134,22 +149,7 @@
       background: url(../images/mobile/products/ice-coffee@2x.jpg)2x;
     }
   }
-  .types-item.col-yellow::after {
-    content: '';
-    width: 200px;
-    height: 200px;
-    background-color: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    margin-top: -560px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 150px;
-  }
+
   .types-item.milkshakes::before {
     content: '';
     display: block;
@@ -181,7 +181,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    margin-top: -560px;
+    margin-top: -515px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -231,16 +231,21 @@
   .types-icon:focus {
     width: 50px;
   }
+  .svg-button{
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    bottom: -5%;
+    }
 }
 
 @media screen and (min-width: 320px) {
   .product {
     background-image: url(../images/mobile/background/bg-ice-cream.jpg);
-    margin-right: auto;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat: repeat;
+    background-position: 50%;
+    background-size: contain;
     width: 100%;
   }
   @media (min-device-pixel-ratio: 2),
@@ -344,7 +349,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    margin-top: -560px;
+    margin-top: -515px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -380,7 +385,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    margin-top: -560px;
+    margin-top: -515px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -416,7 +421,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    margin-top: -560px;
+    margin-top: -515px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -465,6 +470,13 @@
   .types-icon:hover,
   .types-icon:focus {
     width: 50px;
+  }
+  .svg-button{
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  bottom: -5%;
   }
 }
 
@@ -576,7 +588,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    margin-top: -565px;
+    margin-top: -520px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -612,7 +624,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    margin-top: -565px;
+    margin-top: -520px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -648,7 +660,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    margin-top: -565px;
+    margin-top: -520px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -693,6 +705,12 @@
   .types-icon:hover,
   .types-icon:focus {
     width: 50px;
+  }
+  .svg-button{
+    position: absolute;
+    top: 95%;
+    left: 67%;
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -799,7 +817,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    margin-top: -671px;
+    margin-top: -620px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -834,7 +852,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    margin-top: -671px;
+    margin-top: -620px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -869,7 +887,7 @@
       ),
       #d9d9d9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    margin-top: -671px;
+    margin-top: -620px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 150px;
@@ -903,13 +921,15 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .types-link {
-    background-color: transparent;
-    border: 0;
-    margin: 0px;
-  }
+
   .types-icon:hover,
   .types-icon:focus {
     width: 50px;
+  }
+  .svg-button{
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%,-50%);
   }
 }
