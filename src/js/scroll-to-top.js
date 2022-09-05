@@ -12,9 +12,9 @@ window.onload = () => {
 
     const scrolbtn = document.querySelector('.isshowbtn');
     window.onscroll = () => {
-        if (window.scrollY > 600) {
+        if (window.scrollY > 300) {
             scrolbtn.classList.remove('isshowbtn__hide')
-        } else if (window.scrollY < 600) {
+        } else if (window.scrollY < 300) {
             scrolbtn.classList.add('isshowbtn__hide')
         }
     };
