@@ -149,7 +149,6 @@
       background: url(../images/mobile/products/ice-coffee@2x.jpg) 2x;
     }
   }
-
   .types-item.milkshakes::before {
     content: '';
     display: block;
@@ -612,6 +611,7 @@
     .types-item.ice-coffee::before {
       background: url(../images/tablet/products/ice-coffee@2x.jpg) 2x;
     }
+
   }
 
   .types-item.col-yellow::after {
