@@ -1,20 +1,33 @@
 .gallery-list {
   padding-bottom: 80px;
+  
 }
+
+.gallery-picture {
+  margin-left: 93px;
+}
+
 .bg {
   position: relative;
+  background-color: #84a178;
 
   &::before {
     position: absolute;
     display: block;
     content: url(../images/desktop/background/bg-ice-cream.jpg);
+    // top: 200px;
+    // left: 0;
+    // @media screen and (min-width: 1200px) {
+    //   top: 94px;
+    //   left: 0;
+    // }
     // background-image: url(../images/desktop/background/bg-ice-cream.jpg);
   }
 }
 
 @media screen and (max-width: 767px) {
   .bg {
-    background-color: var(--title-item-text-color);
+    // background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -28,16 +41,15 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .bg {
-      // background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
-    }
+    // .bg {
+    //   // background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
+    // }
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg {
-    // position: absolute;
-    background-color: var(--title-item-text-color);
+    // background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -52,15 +64,15 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .bg {
-      // background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
-    }
+    // .bg {
+    //   // background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
+    // }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .bg {
-    background-color: var(--title-item-text-color);
+    // background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -74,37 +86,21 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .bg {
-      // background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
-    }
-  }
-}
-
-.review {
-  padding-bottom: 430px;
-}
-
-@media screen and (min-width: 768px) {
-  .review:last-child {
-    padding-bottom: 427px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .review:last-child {
-    padding-bottom: 450px;
+    // .bg {
+    //   background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
+    // }
   }
 }
 
 .slick-dots {
-  padding-bottom: 394px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 383px;
+    padding-bottom: 20px;
   }
 
   @media screen and (min-widht: 1200px) {
-    padding-bottom: 200px;
+    padding-bottom: 20px;
   }
 }
 

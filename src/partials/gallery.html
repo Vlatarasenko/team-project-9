@@ -1,48 +1,74 @@
 <section class="bg" id="gallery">
   <div class="container">
-    <!-- <h2 class="visually-hidden">Gallery</h2>
-    <ul class="gallery-list list gallery">
+    <h2 class="visually-hidden">Gallery</h2>
+    <!-- Gallery -->
+    <div class="gallery-time">
+    <ul class="gallery-list list">
       <li class="gallery-picture">
-        <a href="./images/desktop/gallery/gallery-photo@3x.jpg">
-          <img
-            class="gallery-photo"
-            src="./images/desktop/gallery/gallery-photo1.jpg"
-            alt="icecream"
-            width="279"
-            height="130"
-        /></a>
-      </li>
-      <li class="gallery-picture">
-        <a href="./images/desktop/gallery/gallery-photo2@3x.jpg">
-          <img
-            class="gallery-photo"
-            src="./images/desktop/gallery/gallery-photo2.jpg"
-            alt="icecream"
-            width="279"
-            height="130"
-        /></a>
-      </li>
-      <li class="gallery-picture">
-        <a href="./images/desktop/gallery/gallery-photo3@3x.jpg">
-          <img
-            class="gallery-photo"
-            src="./images/desktop/gallery/gallery-photo3.jpg"
-            alt="icecream"
-            width="279"
-            height="130"
-        /></a>
-      </li>
-      <li class="gallery-picture">
-        <a href="./images/desktop/gallery/gallery-photo4@3x.jpg">
-          <img
-            class="gallery-photo"
-            src="./images/desktop/gallery/gallery-photo4.jpg"
-            alt="icecream"
-            width="279"
-            height="130"
-        /></a>
+        <picture>
+          <source srcset="./images\desktop\gallery\gallery-photo1.jpg 1x, 
+          ./images\desktop\gallery\gallery-photo@2x.jpg 2x"
+          media="(min-width: 1200px)"/>
+          <source srcset="./images\tablet\gallery\gallery-photo1.jpg 1x,
+          ./images\tablet\gallery\gallery-photo1@2x.jpg 2x"
+          media="(min-width: 768px)"/>
+          <source srcset="./images\mobile\gallery\gallery-photo1.jpg 1x,
+          ./images\mobile\gallery\gallery-photo1@2x.jpg 2x"
+          media="(max-width: 767px)"/>
+          <img class="gallery-photo" src="./images/desktop/gallery/gallery-photo1.jpg" alt="icecream"/>
+        </picture>          
       </li>
     </ul>
+      <ul class="gallery-list list">
+      <li class="gallery-picture">
+        <picture>
+          <source srcset="./images\desktop\gallery\gallery-photo2.jpg 1x, 
+          ./images\desktop\gallery\gallery-photo2@2x.jpg 2x"
+          media="(min-width: 1200px)"/>
+          <source srcset="./images\tablet\gallery\gallery-photo2.jpg 1x, 
+          ./images\tablet\gallery\gallery-photo2@2x.jpg 2x"
+          media="(min-width: 768px)"/>
+          <source srcset="./images\mobile\gallery\gallery-photo2.jpg 1x,
+          ./images\mobile\gallery\gallery-photo2@2x.jpg 2x"
+          media="(max-width: 767px)"/>
+          <img class="gallery-photo" src="./images/desktop/gallery/gallery-photo2.jpg" alt="icecream"/>
+        </picture>
+      </li>
+    </ul>
+    <ul class="gallery-list list">
+      <li class="gallery-picture">
+        <picture>
+          <source srcset="./images\desktop\gallery\gallery-photo3.jpg 1x, 
+          ./images\desktop\gallery\gallery-photo2@2x.jpg 2x"
+          media="(min-width: 1200px)"/>
+          <source srcset="./images\tablet\gallery\gallery-photo3.jpg 1x, 
+          ./images\tablet\gallery\gallery-photo3@2x.jpg 2x"
+          media="(min-width: 768px)"/>
+          <source srcset="./images\mobile\gallery\gallery-photo3.jpg 1x, 
+          ./images\mobile\gallery\gallery-photo3@2x.jpg 2x"
+          media="(max-width: 767px)"/>
+          <img class="gallery-photo" src="./images/desktop/gallery/gallery-photo3.jpg" alt="icecream"/>
+        </picture>
+      </li>
+    </ul>
+      <ul class="gallery-list list">
+       <li class="gallery-picture">
+        <picture>
+          <source srcset="./images\desktop\gallery\gallery-photo4.jpg 1x, 
+          ./images\desktop\gallery\gallery-photo4@2x.jpg 2x"
+          media="(min-width: 1200px)"/>
+          <source srcset="./images\tablet\gallery\gallery-photo4.jpg 1x,
+          ./images\tablet\gallery\gallery-photo4@2x.jpg 2x"
+          media="(min-width: 768px)"/>
+          <source srcset="./images\mobile\gallery\gallery-photo4.jpg 1x,
+          ./images\mobile\gallery\gallery-photo4@2x.jpg 2x"
+          media="(max-width: 767px)"/>
+          <img class="gallery-photo" src="./images/desktop/gallery/gallery-photo4.jpg" alt="icecream"/>
+        </picture>
+       </li>
+      </ul>
+    </div>
+    <!-- Review -->
     <div class="one-time">
       <ul class="review list">
         <li class="review-picture">
@@ -135,8 +161,7 @@
                 ./images\tablet\customers\bryan1x.jpg  1x,
                 ./images\tablet\customers\bryan@2x.jpg 2x
               "
-              media="(min-width: 768px)"
-            />
+              media="(min-width: 768px)"/>
             <source
               srcset="
                 ./images\mobile\customers\bryan1x.jpg  1x,
@@ -157,6 +182,6 @@
         </li>
         <li class="review-name__item">Bryan, New-York</li>
       </ul>
-    </div> -->
+    </div>
   </div>
 </section>
