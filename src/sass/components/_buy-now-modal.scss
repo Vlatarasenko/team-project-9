@@ -7,7 +7,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   padding: 28px;
   margin-right: auto;
   margin-left: auto;
@@ -16,6 +16,25 @@
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 644px;
+  }
+}
+
+.close-btn-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  z-index: 1;
+
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: #ff6600;
   }
 }
 
@@ -50,7 +69,7 @@
   }
 }
 
-.modal-form {
+.buy-now-modal-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,6 +104,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 .submit-button {
   font-family: 'Montserrat';
   font-style: normal;
@@ -106,6 +126,8 @@
   }
 }
 
+=======
+>>>>>>> Stashed changes
 ::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
@@ -115,7 +137,7 @@
   color: #000000;
 }
 
-.backdrop {
+.backdrop-buy-now {
   position: fixed;
   top: 0;
   left: 0;
@@ -123,8 +145,8 @@
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
-}
 
+<<<<<<< Updated upstream
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -133,4 +155,48 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
+=======
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.buy-is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.submit-button {
+  width: 152px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+    color: #fff;
+    transform: scale(1.1);
+    outline: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+>>>>>>> Stashed changes
 }

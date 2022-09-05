@@ -1,7 +1,35 @@
+<<<<<<< Updated upstream
 .advantages {
     text-align: center;
     color: #FCFCFC;
 }
+=======
+#scrollup {
+  position: fixed;
+  z-index: 99999;
+  bottom: 200px;
+  right: 20px;
+  font-size: 40px;
+  color: var(--accent-color);
+  cursor: pointer;
+  animation: pulsing 5s infinite;
+
+  @media screen and (min-width: 768px) {
+    right: 60px;
+  }
+}
+
+.isshowbtn {
+  opacity: 1;
+  transition: 0.7s;
+
+  &__hide {
+    opacity: 0;
+  }
+}
+
+// delit
+>>>>>>> Stashed changes
 
 .advantages {
     padding-bottom: 86px;
@@ -14,8 +42,22 @@
 }
 
 .advantages-list__title {
+<<<<<<< Updated upstream
     text-transform: uppercase;
     color: #FCFCFC;
+=======
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+}
+
+.advantages-list__descriptio {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+>>>>>>> Stashed changes
 }
 
 .wrapper-list-icon {
@@ -28,6 +70,7 @@
     align-items: center;
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width:480px) {
     .advantages {
         padding-bottom: 60px;
@@ -39,6 +82,12 @@
         margin-right: auto;
         margin-left: auto;
     }
+=======
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding-bottom: 60px;
+  }
+>>>>>>> Stashed changes
 
     .wrapper-list__item {
         margin-top: 16px;
@@ -83,3 +132,7 @@
     }
 }
 
+<<<<<<< Updated upstream
+=======
+//
+>>>>>>> Stashed changes
