@@ -9,7 +9,6 @@
 }
 .footer__info-wrapper {
     position: relative;
-    border-bottom: 1px solid #E1E1E1;
     padding-bottom: 174px;
     @media screen and (min-width:768px) {
         padding-bottom: 32px;
@@ -144,10 +143,27 @@
     }
 
 .footer__copyright {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
+    &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: -16px;
+        background-color: #E1E1E1;
+        @media screen and (min-width:768px) {
+            top: -14px;
+        }
+        @media screen and (min-width:1200px) {
+            top: -12px;
+        }
+    }
     @media screen and (min-width:768px) {
         flex-direction: row;
         justify-content: center;
