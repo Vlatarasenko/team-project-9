@@ -8,7 +8,7 @@
   cursor: pointer;
   animation: pulsing 5s infinite;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     right: 60px;
   }
 }
@@ -23,13 +23,13 @@
 }
 
 // delit
-.buy-now-modal {
-  display: none;
-}
+// .buy-now-modal {
+//   display: none;
+// }
 
-.backdrop {
-  display: none;
-}
+// .backdrop {
+//   display: none;
+// }
 
 // ======================
 .advantages {
@@ -52,7 +52,6 @@
 }
 
 .advantages-list__descriptio {
-
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
@@ -72,8 +71,6 @@
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 5s infinite;
 }
-
-
 
 @media screen and (max-width: 767px) {
   .advantages {
