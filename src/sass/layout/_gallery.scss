@@ -6,32 +6,32 @@
   margin-left: 93px;
 }
 
-.bg {
-  position: relative;
-  background-color: #84a178;
+// .bg {
+//   position: relative;
+//   background-color: #84a178;
 
-  &::before {
-    position: absolute;
-    display: block;
-    // content: url(../images/desktop/background/bg-ice-cream.jpg);
-    // top: 200px;
-    // left: 0;
-    // @media screen and (min-width: 1200px) {
-    //   top: 94px;
-    //   left: 0;
-    // }
-    // background-image: url(../images/desktop/background/bg-ice-cream.jpg);
-  }
-}
+//   &::before {
+//     position: absolute;
+//     display: block;
+// content: url(../images/desktop/background/bg-ice-cream.jpg);
+// top: 200px;
+// left: 0;
+// @media screen and (min-width: 1200px) {
+//   top: 94px;
+//   left: 0;
+// }
+// background-image: url(../images/desktop/background/bg-ice-cream.jpg);
+//   }
+// }
 
 @media screen and (max-width: 767px) {
   .bg {
-    // background-color: var(--title-item-text-color);
+    background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    // background: url(../images/mobile/background/bg-ice-cream.jpg);
+    background: url(../images/mobile/background/bg-ice-cream.jpg);
 
     background-size: cover;
   }
@@ -40,20 +40,20 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    // .bg {
-    //   // background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
-    // }
+    .bg {
+      background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg {
-    // background-color: var(--title-item-text-color);
+    background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    // background: url(../images/tablet/background/bg-ice-cream.jpg);
+    background: url(../images/tablet/background/bg-ice-cream.jpg);
     background-position: center;
     background-size: cover;
     background-position: to bottom 200px;
@@ -63,20 +63,20 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    // .bg {
-    //   // background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
-    // }
+    .bg {
+      background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .bg {
-    // background-color: var(--title-item-text-color);
+    background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    // background: url(../images/desktop/background/bg-ice-cream.jpg);
+    background: url(../images/desktop/background/bg-ice-cream.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -85,9 +85,9 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    // .bg {
-    //   background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
-    // }
+    .bg {
+      background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
+    }
   }
 }
 
