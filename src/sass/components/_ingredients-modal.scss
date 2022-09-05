@@ -1,0 +1,55 @@
+.backdrop-ingredients {
+    position: fixed;
+    z-index: 31;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.locis-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.ingredients-modal {
+    display: none;
+    width: 280px;
+    height: 990px;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 28px 20px;
+    background-color: #ffff;
+
+    @media screen and (min-width: 768px) {
+        width: 528px;
+        height: 995px;
+    }
+}
+
+.ingredients-modal__title {
+    text-align: center;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #131313;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
