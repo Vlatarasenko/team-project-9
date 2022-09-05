@@ -1,21 +1,16 @@
-// scrollup
-
-// .scrollup {
-//     position: fixed;
-
-//     width: 60px;
-//     height: 40px;
-
-//     cursor: pointer;
-// }
-
 #scrollup {
   position: fixed;
   z-index: 99999;
   bottom: 200px;
-  right: 100px;
+  right: 20px;
   font-size: 40px;
   color: var(--accent-color);
+  cursor: pointer;
+  animation: pulsing 5s infinite;
+
+  @media screen and (min-width:768px) {
+    right: 60px;
+  }
 }
 
 .isshowbtn {
@@ -27,13 +22,19 @@
   }
 }
 
+// delit
+.buy-now-modal {
+  display: none;
+}
+
+.backdrop {
+  display: none;
+}
+
 // ======================
 .advantages {
   text-align: center;
   color: var(--primary-text-color);
-}
-
-.advantages {
   padding-bottom: 86px;
 }
 
@@ -45,7 +46,17 @@
 
 .advantages-list__title {
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+}
+
+.advantages-list__descriptio {
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .wrapper-list-icon {
@@ -62,7 +73,9 @@
   animation: pulsing 5s infinite;
 }
 
-@media screen and (min-width: 480px) {
+
+
+@media screen and (max-width: 767px) {
   .advantages {
     padding-bottom: 60px;
   }
@@ -95,6 +108,10 @@
   .advantages-list {
     display: flex;
     justify-content: space-between;
+
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.04em;
   }
 
   .wrapper-list__item {
