@@ -1,6 +1,16 @@
 .gallery-list {
   padding-bottom: 80px;
 }
+.bg {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: url(../images/desktop/background/bg-ice-cream.jpg);
+    // background-image: url(../images/desktop/background/bg-ice-cream.jpg);
+  }
+}
 
 @media screen and (max-width: 767px) {
   .bg {
@@ -9,8 +19,8 @@
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background: url(../images/mobile/background/bg-ice-cream.jpg);
-    background-position: center;
+    // background: url(../images/mobile/background/bg-ice-cream.jpg);
+
     background-size: cover;
   }
 
@@ -19,21 +29,23 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .bg {
-      background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
+      // background-image: url(../images/mobile/background/bg-ice-cream@2x.jpg);
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg {
+    // position: absolute;
     background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background: url(../images/tablet/background/bg-ice-cream.jpg);
+    // background: url(../images/tablet/background/bg-ice-cream.jpg);
     background-position: center;
     background-size: cover;
+    background-position: to bottom 200px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -41,7 +53,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .bg {
-      background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
+      // background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
     }
   }
 }
@@ -53,7 +65,7 @@
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
-    background: url(../images/desktop/background/bg-ice-cream.jpg);
+    // background: url(../images/desktop/background/bg-ice-cream.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -63,7 +75,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .bg {
-      background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
+      // background-image: url(../images/desktop/background/bg-ice-cream@2x.jpg);
     }
   }
 }
