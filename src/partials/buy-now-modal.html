@@ -11,16 +11,22 @@
         <picture>
           <source
             srcset="
-              ./images/mobile/modal-window/ice-cream.png     1x,
-              ./images/mobile/modal-window/ice-cream@2x.png  2x,
-              ./images/desktop/modal-window/ice-cream.png    1x,
-              ./images/desktop/modal-window/ice-cream@2x.png
+              ./images/mobile/modal-window/ice-cream.png    1x,
+              ./images/mobile/modal-window/ice-cream@2x.png 2x
             "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/desktop/modal-window/ice-cream.png    1x,
+              ./images/desktop/modal-window/ice-cream@2x.png 2x
+            "
+            media="(min-width: 768px)"
           />
         </picture>
         <img
           class="buy-now-modal__pic"
-          src="./images/desktop/modal-window/ice-cream.png"
+          src="./images/mobile/modal-window/ice-cream.png"
           alt="Ice Cream"
         />
         <p class="buy-now-modal__text">ICE CREAM</p>
@@ -31,14 +37,21 @@
           <source
             srcset="
               ./images/mobile/modal-window/ice-coffee.png    1x,
-              ./images/mobile/modal-window/ice-coffee@2x.png 2x,
-              ./images/desktop/modal-window/ice-cream.png    1x,
-              ./images/desktop/modal-window/ice-cream@2x.png 2x
+              ./images/mobile/modal-window/ice-coffee@2x.png 2x
             "
+            media="(max-width: 767px)"
           />
+          <source
+            srcset="
+              ./images/desktop/modal-window/ice-coffee.png    1x,
+              ./images/desktop/modal-window/ice-coffee@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
           <img
             class="buy-now-modal__pic"
-            src="./images/desktop/modal-window/ice-cream.png"
+            src="./images/mobile/modal-window/ice-coffee.png"
             alt="Ice Coffee"
           />
         </picture>
@@ -49,11 +62,17 @@
         <picture>
           <source
             srcset="
-              ./images/mobile/modal-window/milkshakes.png     1x,
-              ./images/mobile/modal-window/milkshakes@2x.png  2x,
+              ./images/mobile/modal-window/milkshakes.png    1x,
+              ./images/mobile/modal-window/milkshakes@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
               ./images/desktop/modal-window/milkshakes.png    1x,
               ./images/desktop/modal-window/milkshakes@2x.png 2x
             "
+            media="(min-width: 1200px)"
           />
           <img
             class="buy-now-modal__pic"
