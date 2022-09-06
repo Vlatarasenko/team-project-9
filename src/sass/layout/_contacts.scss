@@ -1,3 +1,16 @@
+.contacts {
+  position: absolute;
+  transform: translateY(-344px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-225px);
+  }
+
+  @media screen and (min-width: 1200px){
+    transform: translateY(-94px);
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts-list {
     display: flex;

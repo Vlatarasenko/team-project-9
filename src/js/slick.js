@@ -3,13 +3,13 @@ $('.one-time').slick({
   infinite: true,
   slidesToShow: 1,
   adaptiveHeight: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
 });
 
 
 $('.gallery-time').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   slidesToShow: 1,
   adaptiveHeight: true,
