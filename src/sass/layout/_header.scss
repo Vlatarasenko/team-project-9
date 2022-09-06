@@ -1,11 +1,9 @@
-
-
 .header {
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  
+
   padding-bottom: 25px;
 
   font-family: inherit;
@@ -16,8 +14,8 @@
   min-width: 320px;
 
   padding-bottom: 25px;
-
 }
+
 
 .header-icon {
   width: 60px;
@@ -33,6 +31,19 @@
   align-items: center;
 }
 
+
+.mobile-menu-button {
+ fill: #ffff;
+ }
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+
+
 .site-nav {
   width: 543px;
   height: 20px;
@@ -40,6 +51,13 @@
   top: 40px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+@media screen and (max-width: 1199px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__link {
@@ -89,4 +107,10 @@
   /* or 129% */
   align-items: center;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .order-button {
+    display: none;
+  }
 }
