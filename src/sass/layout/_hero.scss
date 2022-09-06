@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .hero-container {
-    width: 320px;
+    // width: 320px;
     position: relative;
     background-image: url(../images/mobile/hero/points.png);
     background-repeat: no-repeat;
@@ -98,9 +98,10 @@
     transform: translateX(-50%);
     filter: drop-shadow(6 -15px 15px rgba(252, 252, 252, 0.44));
     width: 170px;
+  }
 
-    margin-left: auto;
-    margin-right: auto;
+  .animate__backInUp {
+    animation: none;
   }
 }
 
@@ -224,19 +225,86 @@
   .hero-desc-img {
     margin-right: 33px;
     width: 152px;
+
+    & {
+      -webkit-animation: spin 5s linear infinite;
+      -moz-animation: spin 5s linear infinite;
+      animation: spin 5s linear infinite;
+    }
+    @-moz-keyframes spin {
+      100% {
+        -moz-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .hero-wrapper-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 31px;
   }
 
   .hero-desc-btn {
     padding: 0;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: flex-start;
+
+    &:hover .hero-desc-btn__icon,
+    &:focus .hero-desc-btn__icon {
+      width: 50px;
+    }
   }
 
   .hero-desc-btn__icon {
     fill: var(--primary-text-color);
+  }
 
-    &:hover,
-    &:focus {
-      width: 50px;
-    }
+  .hidden-hero-window {
+    position: absolute;
+    bottom: 10px;
+    right: 280px;
+    z-index: 1000;
+
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: var(--primary-text-color);
+    color: var(--accent-color);
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 1.21;
+
+    opacity: 0;
+  }
+
+  .hero-desc-btn:hover + div.hidden-hero-window {
+    opacity: 1;
+    transition: opacity 250ms ease-out;
+  }
+
+  .hero-desc-btn:focus + div.hidden-hero-window {
+    opacity: 1;
+    transition: opacity 250ms ease-out;
   }
 
   .hero-about {
@@ -354,25 +422,17 @@
     padding: 12px 22px;
   }
 
-  .hero-desc-img {
-    -webkit-animation: spin 5s linear infinite;
-    -moz-animation: spin 5s linear infinite;
-    animation: spin 5s linear infinite;
-  }
-  @-moz-keyframes spin {
-    100% {
-      -moz-transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+  .hidden-hero-window {
+    bottom: 20px;
+    right: 520px;
+    z-index: 1000;
+
+    width: 360px;
+    height: 100px;
+    padding: 15px;
+
+    font-weight: 600;
+    font-size: 15px;
+    border: 3px solid var(--accent-color);
   }
 }
