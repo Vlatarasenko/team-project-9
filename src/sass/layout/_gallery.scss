@@ -1,8 +1,4 @@
 .gallery-photo{
-  @media screen and (min-width: 768px){
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
   @media screen and (min-width: 1200px){
     padding-left: 97px;
@@ -19,7 +15,7 @@
   }
   
   @media screen and (min-width: 1200px) {
-    transform: translateY(-94px);
+    transform: translateY(-550px);
   }
 }
 
