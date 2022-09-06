@@ -168,11 +168,18 @@
     border: 2px solid var(--accent-color);
     border-radius: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       border: 2px solid var(--btn-third-bgc);
+      transform: scale(1.1);
+      // outline: none;
+      // color: #fff;
+      // border-color: rgba(10, 136, 23, 1);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
     }
 
     &:focus {
@@ -295,6 +302,7 @@
     line-height: 1.21;
 
     opacity: 0;
+    transition: opacity 250ms ease-out;
   }
 
   .hero-desc-btn:hover + div.hidden-hero-window {
