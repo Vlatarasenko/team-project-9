@@ -55,7 +55,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 49px;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -69,6 +69,13 @@
     color: rgba($color: #000000, $alpha: 1);
   }
 }
+
+.mobile-site-nav__list {
+  row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 
@@ -147,6 +154,7 @@
   width: 192px;
   height: 42px;
   padding: 12px 54px 11px 37px;
+  margin-top: 150px;
   margin-right: 16px;
   cursor: pointer;
   color: #000000;
@@ -162,7 +170,8 @@
 
   &:hover,
   &:focus {
-    color: rgba($color: #0A8817, $alpha: 1);
+    background-color: rgba($color: #0A8817, $alpha: 1);
+    color: #fff;
   }
 
 }
