@@ -141,12 +141,29 @@
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 768px) {
-    padding: 61px 15px 14px;
+    padding: 61px 15px 14px 15px;
+    font-size: 12px;
+    line-height: 1.3;
   }
 }
 
 .ingredients-list__composition-g {
   position: absolute;
+  top: 0;
+  left: 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.3;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    top: 11px;
+    left: 14px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
 }
 
 // Ingredients table
