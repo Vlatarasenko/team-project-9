@@ -12,16 +12,14 @@
 
 .gallery {
   position: absolute;
-  top: -130px;
-  left: 0;
+  transform: translateY(-210px);
 
   @media screen and (min-width: 768px){
-    transform: translateY(2450px);
+    transform: translateY(-383px);
   }
   
   @media screen and (min-width: 1200px) {
-    top: -94px;
-    left: 0;
+    transform: translateY(-94px);
   }
 }
 
