@@ -1,16 +1,11 @@
-// @media screen and (max-width: 767px) {
-//   .header {
-//     display: none;
-//   }
-// }
+
 
 .header {
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
-
+  
   padding-bottom: 25px;
 
   font-family: inherit;
@@ -21,6 +16,7 @@
   min-width: 320px;
 
   padding-bottom: 25px;
+
 }
 
 .header-icon {
