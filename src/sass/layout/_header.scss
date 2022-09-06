@@ -137,6 +137,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .order-button {
+    display: none;
+  }
+}
+
 .order-button1 {
   width: 192px;
   height: 42px;
