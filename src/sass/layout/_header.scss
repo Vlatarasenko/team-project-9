@@ -190,6 +190,9 @@
   position: absolute;
   top: 0px;
   left: 36px;
+  @media screen and (min-width: 768px) {
+    left: 48px;
+  }
 }
 
 .mobile-menu {
