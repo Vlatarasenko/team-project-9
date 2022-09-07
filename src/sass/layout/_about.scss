@@ -13,23 +13,6 @@
   }
 }
 
-.about__top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  transform: translate(0, 6px);
-  display: block;
-  width: 100%;
-  height: 26px;
-
-  background-color: #d9d9d9;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
 .about__label {
   margin-bottom: 12px;
 
