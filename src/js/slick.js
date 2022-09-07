@@ -8,9 +8,11 @@ $('.one-time').slick({
 });
 
 $('.gallery-time').slick({
-  dots: true,
+  dots: false,
+  arrow: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
+  autoplay: true,
 });

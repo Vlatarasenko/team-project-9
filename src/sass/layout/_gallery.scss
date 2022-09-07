@@ -1,7 +1,9 @@
 .gallery-photo {
+  border-radius: 10px;
+  margin: 0 auto;
   @media screen and (min-width: 1200px) {
-    padding-left: 97px;
-    padding-right: 97px;
+    // padding-left: 97px;
+    // padding-right: 97px;
   }
 }
 
