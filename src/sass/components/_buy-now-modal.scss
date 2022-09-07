@@ -221,3 +221,36 @@
     left: 0;
   }
 }
+
+.close-btn-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  z-index: 1;
+
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: #ff6600;
+  }
+}
+
+// .milkshake::after {
+//   content: '';
+//   width: 131.56px;
+//   height: 130.6px;
+//   border-radius: 150px;
+//   background: linear-gradient(
+//       0deg,
+//       rgba(156, 190, 143, 0.7),
+//       rgba(156, 190, 143, 0.7)
+//     ),
+//     #d9d9d9;
+//   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+// }
