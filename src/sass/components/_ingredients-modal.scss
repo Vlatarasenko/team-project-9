@@ -24,8 +24,10 @@
   top: 50%;
   left: 50%;
   overflow-y: auto;
-  width: 280px;
-  height: 990px;
+  // width: 280px;
+  // height: 990px;
+  width: 100vw;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
   padding: 28px 20px 32px 20px;
@@ -38,6 +40,8 @@
   @media screen and (min-width: 768px) {
     width: 528px;
     height: 995px;
+    // width: 528px;
+    // height: 995px;
     padding: 32px 20px;
   }
 }
