@@ -1,52 +1,37 @@
-.gallery-photo{
-
-  @media screen and (min-width: 1200px){
+.gallery-photo {
+  @media screen and (min-width: 1200px) {
     padding-left: 97px;
     padding-right: 97px;
   }
 }
 
 .gallery {
-  position: absolute;
-  transform: translateY(-210px);
+  transform: translateY(-105px);
+  display: flex;
+  justify-content: center;
 
-  @media screen and (min-width: 768px){
-    transform: translateY(-383px);
+  @media screen and (min-width: 768px) {
+    transform: translateY(-163px);
   }
-  
+
   @media screen and (min-width: 1200px) {
     transform: translateY(-550px);
   }
 }
 
-.gallery-list {
-  padding-bottom: 80px;
+.slick-dotted.slick-slider {
+  @media screen and (min-width: 768px) {
+    margin-top: -120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -360px;
+  }
 }
-
-
-
-// .bg {
-//   position: relative;
-//   background-color: #84a178;
-
-//   &::before {
-//     position: absolute;
-//     display: block;
-// content: url(../images/desktop/background/bg-ice-cream.jpg);
-// top: 200px;
-// left: 0;
-// @media screen and (min-width: 1200px) {
-//   top: 94px;
-//   left: 0;
-// }
-// background-image: url(../images/desktop/background/bg-ice-cream.jpg);
-//   }
-// }
-
 
 @media screen and (max-width: 767px) {
   .bg {
-    height: 940px;
+    height: 1140px;
     padding-top: 80px;
     background-color: var(--title-item-text-color);
     text-align: center;
@@ -71,7 +56,7 @@
 @media screen and (min-width: 768px) {
   .bg {
     height: 958px;
-    padding-top: 223px;
+    // padding-top: 223px;
     background-color: var(--title-item-text-color);
     text-align: center;
     margin-right: auto;
@@ -90,7 +75,6 @@
     .bg {
       background-image: url(../images/tablet/background/bg-ice-cream@2x.jpg);
     }
-
   }
 }
 
@@ -129,7 +113,6 @@
   color: #84a178;
   background-color: #84a178;
   border-radius: 10px;
-
 }
 
 .slick-dots {
@@ -173,7 +156,6 @@
   @media screen and (max-width: 767px) {
     min-height: 280px;
   }
-
 }
 
 .review-name__item {
