@@ -10,8 +10,6 @@
 .header-icon {
   width: 60px;
   height: 65px;
-  left: 16px;
-  top: 8px;
   margin-left: 16px;
 }
 
@@ -52,6 +50,7 @@
 }
 
 .mobile-site-nav__list {
+  margin-top: 100px;
   margin-bottom: 111px;
   row-gap: 32px;
   display: flex;
@@ -122,6 +121,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+    color: #fff;
+    transform: scale(1.1);
+    outline: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -172,11 +180,6 @@
   }
 }
 
-.mobile-menu-close-button {
-  top: 16px;
-  right: 25px;
-}
-
 .order-button__icon {
   width: 6;
   height: 12;
@@ -184,14 +187,9 @@
 }
 
 .header-icon1 {
-  padding-top: 10px;
-  padding-left: 15px;
-}
-
-.mobile-menu-close-button {
   position: absolute;
-  right: 30;
-  top: 16;
+  top: 0px;
+  left: 36px;
 }
 
 .mobile-menu {
@@ -213,4 +211,16 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.mobile-menu-close-button {
+  top: 16px;
+  right: 20px;
+}
+
+.mobile-order-button__icon {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  fill: #ffff;
 }
